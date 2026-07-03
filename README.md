@@ -1,5 +1,5 @@
 ## この課題の概要
-Next.jsでTo doアプリの課題を行いました。
+Next.jsでTo doアプリの課題を行いました。　　
 CRUD機能を実装いたしました。
 
 First, run the development server:
