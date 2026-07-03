@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Todo {
+  id Int @id @default(autoincrement())
+  status_id Int
+  title String @db.VarChar(50)
+  content String? @db.VarChar(100)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  status Status @relation(fields: [status_id], references: [id])
+}
+
+model Status {
+  id Int @id @default(autoincrement())
+  name String @db.Text
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  todo Todo[]
+}
