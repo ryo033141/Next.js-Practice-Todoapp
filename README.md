@@ -1,9 +1,10 @@
 ## この課題の概要
-Next.jsでTo doアプリの課題を行いました。　　
+Next.jsでTo doアプリの課題を行いました。<br>　　
 CRUD機能を実装いたしました。
 
-First, run the development server:
-
+## フォルダ構成
+たくさんファイルがございますが、実際に作成した部分のファイル構成を<br>
+下記に示します。
 ```bash
 npm run dev
 # or
