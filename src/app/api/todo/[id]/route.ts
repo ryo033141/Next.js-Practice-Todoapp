@@ -1,3 +1,4 @@
+// レビュー依頼
 /* PrismaClientをインポート
    Prismaを使ってDB操作をするためのクラス */
 import { PrismaClient } from "@prisma/client";

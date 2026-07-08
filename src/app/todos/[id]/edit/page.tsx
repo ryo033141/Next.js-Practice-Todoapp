@@ -1,3 +1,4 @@
+// レビュー依頼
 'use client';
 
 import { handleBuildComplete } from "next/dist/build/adapter/build-complete";
