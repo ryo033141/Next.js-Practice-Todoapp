@@ -1,3 +1,4 @@
+// レビュー依頼
 // Next.jsでレスポンスを返すための機能をインポート
 import { NextResponse } from "next/server";
 /* PrismaClientをインポート
